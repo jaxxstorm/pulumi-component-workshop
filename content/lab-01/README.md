@@ -18,7 +18,7 @@ cd production-app
 A Pulumi project is just a directory with some files in it. It's possible for you to create a new one by hand. The `pulumi new` command, however, automates the process:
 
 ```bash
-pulumi new python -y
+pulumi new python
 ```
 
 This will print output similar to the following with a bit more information and status as it goes:

@@ -13,7 +13,10 @@ cluster = do.KubernetesCluster(
     region="nyc3",
     version=ver.latest_version,
     node_pool=do.KubernetesClusterNodePoolArgs(
-        name="default", size="s-1vcpu-2gb", node_count=40
+        name="default", 
+        size="s-1vcpu-2gb", 
+        node_count=4,
+        tags=["workshop-cluster"]
     ),
 )
 
@@ -51,3 +54,5 @@ nginx_ingress = k8s.helm.v3.Chart(
 )
 
 pulumi.export("kubeconfig", cluster.kube_configs[0].raw_config)
+
+# pulumi stack output kubeconfig --show-secrets > kubeconfig
