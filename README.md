@@ -1,10 +1,8 @@
-# Pulumi Automation API Workshop
+# Pulumi Reuseable Component Workshop
 
-This workshop will guide you through the process of building an small web application that allows you to deploy to Kubernetes using Pulumi's Automation API.
+This workshop will guide you through the process of creating a reusable Pulumi component to deploy to Kubernetes.
 
 You'll first provision an application to a Kubernetes cluster using Pulumi's [Component Resource](https://www.pulumi.com/docs/intro/concepts/resources/#components) mechanism.
-
-Once you're familiar with the Pulumi CLI, you'll build a web application that allows you to run the Pulumi code via a web interface.
 
 The workshop is designed to be run from within GitPod. Hit the button below to open the repo in GitPod.
 
